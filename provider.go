@@ -11,7 +11,7 @@ import (
 type Provider struct {
 	APIToken       string `json:"api_token,omitempty"`
 	OverrideDomain string `json:"override_domain,omitempty"`
-	ServerURL string `json:"server_url,omitempty"`
+	ServerURL      string `json:"server_url,omitempty"`
 
 	mutex sync.Mutex
 }

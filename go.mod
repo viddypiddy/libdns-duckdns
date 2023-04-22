@@ -1,4 +1,4 @@
-module github.com/libdns/duckdns
+module github.com/viddypiddy/libdns-duckdns
 
 go 1.14
 

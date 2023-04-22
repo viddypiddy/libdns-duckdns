@@ -81,14 +81,14 @@ func (p *Provider) setRecord(ctx context.Context, zone string, record libdns.Rec
 }
 
 func (p *Provider) doRequest(ctx context.Context, domain string, params map[string]string) ([]string, error) {
-	var serverUrl string
-	if p.ServerUrl != "" {
-		serverUrl = p.serverUrl
+	var ServerURL string
+	if p.ServerURL != "" {
+		ServerURL = p.ServerURL
 	} else {
-		serverUrl = "https://www.duckdns.org/update"
+		ServerURL = "https://www.duckdns.org/update"
 	}
 
-	u, _ := url.Parse(serverUrl)
+	u, _ := url.Parse(ServerURL)
 
 	// extract the main domain
 	var mainDomain string
